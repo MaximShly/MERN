@@ -81,7 +81,7 @@ nav ul ul a {
     padding: 1em;
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-    width: 100vw; // Taking full viewport width
+    width: 100%; // Taking full viewport width
     grid-template-areas:
      "header"
      "sidebar"
