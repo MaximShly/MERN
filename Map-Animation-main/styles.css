@@ -21,12 +21,7 @@ body {
 nav {
     display: block;
     margin-bottom: 20px;
-    background-color: #333;
-    position: fixed;  /* Added */
-    width: 100%;      /* Added */
-    z-index: 1000;    /* Added */
-    top: 0;           /* Added */
-    left: 0;          /* Added */
+    background-color: #ADD8E6;
 }
 
 nav ul {
@@ -45,7 +40,7 @@ nav li {
 nav a {
     padding: 10px 15px;
     text-decoration: none;
-    background-color: #444;
+    background-color: #00008B;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
