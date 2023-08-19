@@ -27,7 +27,7 @@ img {
 nav {
     display: block;
     margin-bottom: 20px;
-    background-color: #333;
+    background-color: lightblue;
 }
 
 nav ul {
@@ -46,7 +46,7 @@ nav li {
 nav a {
     padding: 10px 15px;
     text-decoration: none;
-    background-color: #444;
+    background-color: darkblue;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -94,27 +94,27 @@ nav ul ul a {
 
 .header {
     grid-area: header;
-    background-color: #999;
+    background-color: green;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #ddd;
+    background-color: blue;
 }
 
 .content {
     grid-area: content;
-    background-color: #fff;
+    background-color: #3A5F8F;
 }
 
 .sidebar2 {
     grid-area: sidebar2;
-    background-color: #ccc;
+    background-color: #1E3D58;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #666;
+    background-color: darkgreen;
     color: #fff;
 }
 
