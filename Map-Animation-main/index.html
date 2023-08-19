@@ -7,17 +7,31 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
-    <link href="./styles.css" rel="stylesheet" />
+    <link href="../styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="map"></div>
-    <div class="map-overlay top">
-        <button style="font-size: 2em" onclick="move()">
-            Show stops between MIT and Harvard
-        </button>
-    </div>
-    <script src="./mapanimation.js"></script>
+<nav>
+    <ul>
+        <li><a href="../index.html">Maxim</a></li>
+        <li>
+            <a href="#">Projects</a>
+            <ul>
+                <li><a href="../Eye-Movement-HTML-JS-main/index.html">Eye Movements</a></li>
+                <li><a href="../Pacman-Factory-main/index.html">Pacmen Factory</a></li>
+                <li><a href="./index.html">Real Time Bus Tracking</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div id="map"></div>
+<div class="map-overlay top">
+    <button style="font-size: 2em" onclick="move()">
+        Show stops between MIT and Harvard
+    </button>
+</div>
+<a href="URL_OF_MAP_ANIMATION_GITHUB_REPO">View on GitHub</a>
+<script src="./mapanimation.js"></script>
 </body>
 
 </html>
