@@ -118,24 +118,26 @@ nav ul ul a {
     color: #fff;
 }
 
-/* Commenting out these styles to prevent overriding of colors
 .box {
-    background-color: #444;
+    background-color: #555;  /* Slightly different gray */
     color: #fff;
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
 }
 
-.header, .footer {
-    background-color: #999;
+.header {
+    background-color: #007000;  /* Slightly different green */
+}
+
+.footer {
+    background-color: #005500;  /* Slightly different dark green */
 }
 
 .sidebar2 {
-    background-color: #ccc;
+    background-color: #0F2D44;  /* Slightly different shade of blue */
     color: #444;
 }
-*/
 
 .linkedin-button {
     display: inline-block;
