@@ -27,7 +27,7 @@ img {
 nav {
     display: block;
     margin-bottom: 20px;
-    background-color: #ADD8E6; /* lightblue */
+    background-color: #333;
 }
 
 nav ul {
@@ -46,7 +46,7 @@ nav li {
 nav a {
     padding: 10px 15px;
     text-decoration: none;
-    background-color: #00008B; /* darkblue */
+    background-color: #444;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -86,7 +86,6 @@ nav ul ul a {
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     margin: 0 auto;
-    max-width: 1200px;  /* added a max width to contain the content */
 }
 
 .header, .footer, .sidebar, .sidebar2, .content {
@@ -95,62 +94,65 @@ nav ul ul a {
 
 .header {
     grid-area: header;
-    background-color: #008000; /* green */
+    background-color: #999;
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: #0000FF; /* blue */
+    background-color: #ddd;
 }
 
 .content {
     grid-area: content;
-    background-color: #3A5F8F;
+    background-color: #fff;
 }
 
 .sidebar2 {
     grid-area: sidebar2;
-    background-color: #1E3D58;
+    background-color: #ccc;
 }
 
 .footer {
     grid-area: footer;
-    background-color: #006400; /* darkgreen */
+    background-color: #666;
     color: #fff;
 }
 
+@media only screen and (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "header   header"
+        "sidebar  content"
+        "sidebar2 sidebar2"
+        "footer   footer";
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .wrapper {
+        grid-gap: 20px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+        "header  header  header"
+        "sidebar content sidebar2"
+        "footer  footer  footer";
+    }
+}
+
 .box {
-    background-color: #f4f4f4;  /* same as body background */
-    color: #444;
+    background-color: #444;
+    color: #fff;
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
 }
 
 .header, .footer {
-    color: #fff;  /* to ensure the text inside is white */
+    background-color: #999;
 }
 
-.linkedin-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #0077B5; /* LinkedIn's primary color */
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-
-    /* Add a bit of shadow for depth */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.linkedin-button:hover {
-    background-color: #005E93; /* Slightly darker shade for hover */
-    transform: translateY(-2px); /* Slight upward lift on hover */
-}
-
-.linkedin-button:active {
-    transform: translateY(0); /* Reset position on click */
+.sidebar2 {
+    background-color: #ccc;
+    color: #444;
 }
