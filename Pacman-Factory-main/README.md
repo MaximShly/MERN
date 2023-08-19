@@ -14,4 +14,4 @@ Add sound effects when PacMen bounce off the edges.
 Allow customization of PacMan colors and sizes.
 
 ##License Information:
-This project is a part of the [Course/Program Name]. The specific content and code created and presented in this repository is the individual work of [Your Name].
+This project is a part of the MITxPRO Full Stack with MERN. The specific content and code created and presented in this repository is the individual work of Maxim Shlyaptsev.
