@@ -20,10 +20,10 @@ body {
 /* Navigation Styles */
 nav {
     display: block;
-    margin-bottom: 20px;
     background-color: #ADD8E6;
+    margin-bottom: 20px;
     z-index: 999;
-    position: relative; 
+    position: absolute; 
 }
 
 nav ul {
