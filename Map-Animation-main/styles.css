@@ -9,7 +9,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0 0;  /* 60px padding at the top */
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -22,6 +22,11 @@ nav {
     display: block;
     margin-bottom: 20px;
     background-color: #333;
+    position: fixed;  /* Added */
+    width: 100%;      /* Added */
+    z-index: 1000;    /* Added */
+    top: 0;           /* Added */
+    left: 0;          /* Added */
 }
 
 nav ul {
@@ -70,10 +75,9 @@ nav ul ul a {
     display: block;
 }
 
-
 #map {
   position: absolute;
-  top: 0;
+  top: 60px;  /* Adjusted for the navbar */
   bottom: 0;
   width: 100%;
 }
@@ -82,4 +86,5 @@ nav ul ul a {
   position: absolute;
   left: 0;
   padding: 10px;
+  top: 70px;   /* Adjusted so it doesn't get hidden behind the fixed navbar */
 }
