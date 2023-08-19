@@ -118,28 +118,7 @@ nav ul ul a {
     color: #fff;
 }
 
-@media only screen and (min-width: 500px) {
-    .wrapper {
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas:
-        "header   header"
-        "sidebar  content"
-        "sidebar2 sidebar2"
-        "footer   footer";
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .wrapper {
-        grid-gap: 20px;
-        grid-template-columns: 1fr 3fr 1fr;
-        grid-template-areas:
-        "header  header  header"
-        "sidebar content sidebar2"
-        "footer  footer  footer";
-    }
-}
-
+/* Commenting out these styles to prevent overriding of colors
 .box {
     background-color: #444;
     color: #fff;
@@ -156,6 +135,7 @@ nav ul ul a {
     background-color: #ccc;
     color: #444;
 }
+*/
 
 .linkedin-button {
     display: inline-block;
