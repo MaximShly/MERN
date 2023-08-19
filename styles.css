@@ -86,6 +86,7 @@ nav ul ul a {
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     margin: 0 auto;
+    max-width: 1200px;  /* added a max width to contain the content */
 }
 
 .header, .footer, .sidebar, .sidebar2, .content {
@@ -119,24 +120,15 @@ nav ul ul a {
 }
 
 .box {
-    background-color: #555;  /* Slightly different gray */
-    color: #fff;
+    background-color: #f4f4f4;  /* same as body background */
+    color: #444;
     border-radius: 5px;
     padding: 10px;
     font-size: 150%;
 }
 
-.header {
-    background-color: #007000;  /* Slightly different green */
-}
-
-.footer {
-    background-color: #005500;  /* Slightly different dark green */
-}
-
-.sidebar2 {
-    background-color: #0F2D44;  /* Slightly different shade of blue */
-    color: #444;
+.header, .footer {
+    color: #fff;  /* to ensure the text inside is white */
 }
 
 .linkedin-button {
